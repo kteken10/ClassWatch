@@ -1,0 +1,12 @@
+# ClassWatch — dépendances
+streamlit>=1.36
+pydantic>=2.6
+google-genai>=1.0           # SDK officiel Google Gemini (sortie JSON structurée)
+Pillow>=10.0
+opencv-python-headless>=4.9 # 'headless' = compatible Streamlit Cloud (sans GUI)
+numpy>=1.26
+pandas>=2.0
+python-dotenv>=1.0
+reportlab>=4.0              # export PDF (optionnel : le CSV reste dispo sans lui)
+streamlit-geolocation>=0.0.10  # bouton de géolocalisation navigateur (météo)
+# NB : la météo utilise Open-Meteo (gratuit, sans clé) via urllib (stdlib).

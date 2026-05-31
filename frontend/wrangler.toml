@@ -1,0 +1,5 @@
+# Configuration Cloudflare Pages pour ClassWatch (frontend React/Vite).
+# Déploiement : npm run build  puis  npx wrangler pages deploy dist
+name = "classwatch"
+compatibility_date = "2025-05-31"
+pages_build_output_dir = "dist"

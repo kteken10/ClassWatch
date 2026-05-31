@@ -1,0 +1,18 @@
+# Thème ClassWatch — inspiré du design "SDEN Core" (noir + blanc + accent).
+# Palette : fond slate-50, surfaces blanches, texte slate-900, accent ORANGE CITRON.
+# Le détail du style (cartes, boutons, badges…) est appliqué dans ui/theme.py (CSS).
+
+[theme]
+base = "light"
+primaryColor = "#f59e0b"            # accent orange citron (boutons primaires, focus, actif)
+backgroundColor = "#f8fafc"          # slate-50 : fond de l'app
+secondaryBackgroundColor = "#ffffff" # blanc : sidebar, cartes, widgets
+textColor = "#0f172a"                # slate-900 : texte principal
+font = "sans serif"
+
+[client]
+toolbarMode = "minimal"
+
+[server]
+# Confort dev : pas de surveillance agressive du système de fichiers.
+runOnSave = true

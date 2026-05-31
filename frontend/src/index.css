@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Tokens sémantiques — clair (défaut) */
+:root {
+  --bg: 248 250 252; --surface: 255 255 255; --surface2: 248 250 252;
+  --border: 226 232 240; --border-soft: 241 245 249;
+  --ink: 15 23 42; --muted: 100 116 139; --faint: 148 163 184;
+  --hero: 15 23 42;
+}
+/* Tokens sémantiques — sombre */
+.dark {
+  --bg: 2 6 23; --surface: 15 23 42; --surface2: 30 41 59;
+  --border: 30 41 59; --border-soft: 30 41 59;
+  --ink: 226 232 240; --muted: 148 163 184; --faint: 100 116 139;
+  --hero: 15 23 42;
+}
+
+@layer base {
+  * { -webkit-font-smoothing: antialiased; }
+  html, body, #root { height: 100%; }
+  body { @apply bg-bg text-ink font-sans; margin: 0; }
+  ::-webkit-scrollbar { width: 10px; height: 10px; }
+  ::-webkit-scrollbar-thumb { @apply bg-line rounded-full; }
+  ::-webkit-scrollbar-track { background: transparent; }
+}
+
+@layer utilities {
+  .tnum { font-variant-numeric: tabular-nums; }
+}
