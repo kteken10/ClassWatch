@@ -392,9 +392,9 @@ def onglet_journal() -> None:
     theme.section_label("Filtres")
     fcol1, fcol2 = st.columns(2)
     with fcol1:
-        types_sel = st.multiselect("Type d'incident", options=[t.value for t in TypeIncident])
+        types_sel = st.multiselect("Type d'incident", options=[t.value for t in TypeIncident], placeholder="Tous les types")
     with fcol2:
-        sev_sel = st.multiselect("Gravité", options=[s.value for s in Severite])
+        sev_sel = st.multiselect("Gravité", options=[s.value for s in Severite], placeholder="Toutes les gravités")
 
     types = [TypeIncident(t) for t in types_sel] if types_sel else None
     severites = [Severite(s) for s in sev_sel] if sev_sel else None

@@ -137,6 +137,11 @@ def inject_css(dark: bool = False) -> None:
 html, body, .stApp, [class*="st-"] {{
   font-family:'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }}
+/* Les icônes de Streamlit sont des ligatures : elles gardent leur police,
+   sinon leur nom s'affiche en texte (« keyboard_double_arrow_right »). */
+[data-testid="stIconMaterial"], .material-symbols-rounded, .material-icons {{
+  font-family:'Material Symbols Rounded' !important;
+}}
 .stApp {{ background: var(--bg); color: var(--text); }}
 
 /* Texte natif → tokens */

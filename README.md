@@ -6,6 +6,15 @@ Elle va au-delà de la simple détection d'objets : elle **qualifie** des situat
 (type + gravité + description), les **annote** sur l'image, et tient un
 **journal d'incidents horodaté, filtrable et exportable**.
 
+
+| Analyse | Journal |
+|:---:|:---:|
+| <img src="docs/analyse.jpg" alt="Analyse annotée d'une image de classe" width="420"> | <img src="docs/journal.jpg" alt="Journal des incidents" width="420"> |
+
+<p align="center"><img src="docs/obs.jpg" alt="Observations et recommandations" width="640"></p>
+
+<sub>Captures en mode démo (sans clé API) ; photo de classe : Unsplash.</sub>
+
 ---
 
 ## ✨ Fonctionnalités
